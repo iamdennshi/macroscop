@@ -9,7 +9,6 @@ builder.Services.AddHostedService<DateTimeCheckerService>();
 builder.Services.AddControllers();
 builder.Logging.AddConsole();
 
-builder.WebHost.UseUrls("http://localhost:5000");
 var app = builder.Build();
 
 app.UseWebSockets();
